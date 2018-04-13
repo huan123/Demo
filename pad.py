@@ -11,5 +11,4 @@
 # Animal = namedtuple('Animal2','name age type')
 # big_yellow = Animal(name="big_yellow",age = 3,type = "dog")
 # print(big_yellow.age)
-
-print
+print("hah")
