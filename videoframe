@@ -1,0 +1,14 @@
+import cv2
+import numpy
+
+cap = cv2.VideoCapture("/Users/huan/Downloads/av.mp4")
+frames = 1
+person = 1
+
+while cv2.waitKey(30)!=ord('q'):
+    retval, image = cap.read()
+    cv2.imwrite("./image1/%4d_%2d.png" % (frames, person), image)
+    cv2.imshow("video",image)
+    frames = frames+1
+    person = person + 1
+cap.release()
